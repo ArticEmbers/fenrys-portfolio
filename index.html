@@ -258,6 +258,7 @@
       background: var(--surface);
       opacity: 0;
       animation: riseIn 0.6s ease forwards;
+      border-radius: 8px;
     }
     .gallery-item img {
       width: 100%; height: 100%;
@@ -265,6 +266,7 @@
       display: block;
       transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.5s ease;
       filter: brightness(0.8) saturate(0.82);
+      border-radius: 4px;
     }
     .gallery-item:hover img {
       transform: scale(1.06);
@@ -354,7 +356,12 @@
     }
     .lightbox.open .lightbox-inner { transform: scale(1) translateY(0); }
 
-    .lightbox-img-wrap { flex: 1 1 62%; max-height: 82vh; overflow: hidden; }
+    .lightbox-img-wrap { 
+      flex: 1 1 62%; 
+      max-height: 82vh; 
+      overflow: hidden;
+      border-radius: 4px 0 0 4px;
+    }
     .lightbox-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
     .lightbox-info {
